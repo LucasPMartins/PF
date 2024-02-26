@@ -1,3 +1,19 @@
+{-3. Defina uma função chamada ultimo que seleciona o último elemento de uma lista não
+vazia, usando as funções do prelúdio (exceto a função last). Defina mais duas formas
+de fazer esta função.
+
+4. Seja uma lista de alunos e suas notas.
+type Aluno = (Integer, [Char], Double) -- Nro Aluno, Nome, Nota
+type Curso = [Aluno]
+Construa as seguintes funções para a manipulação desses dados:
+
+a) Função recursiva maiorNota :: Curso -> [Char] que recebe um Curso e devolve
+o nome do aluno com a maior nota.
+
+b) Função insereAluno :: Aluno -> Curso -> Curso que recebe um Aluno e um
+Curso e insere esse aluno no curso (cabeça da lista). Caso o aluno já tenha sido
+adicionado anteriormente, retorne a lista sem alteração. -}
+
 ultimo1 :: [Int]->Int
 ultimo1 x = head(reverse x)
 
